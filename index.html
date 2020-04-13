@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[DEMO] - WebRTC</title>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+
+
+</head>
+<body>
+	<table width="100%" style="
+    height: calc(98vh);
+    vertical-align: middle;
+    text-align: center;
+">
+		<tr>
+			<td>
+	<div id="videos">
+		<video id="localVideo" autoplay muted style="width:40%;"></video>
+	  <video id="remoteVideo" autoplay style="width:40%;"></video>
+	</div>
+
+	<button onclick="call(true);">Start</button>
+</td></tr>
+</table>
+<script src="app.js"></script>
+</body>
+</html>
